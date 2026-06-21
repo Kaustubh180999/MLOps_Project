@@ -20,15 +20,11 @@ jobs:
       with:
         python-version: "3.11"
 
-    - name: Install Dependencies
-      run: |
-        pip install -r requirements.txt
-
-    - name: Verify Python Environment
+    - name: Verify Python Installation
       run: |
         python --version
 
-    - name: Validate Repository Structure
+    - name: Verify Repository Structure
       run: |
         ls -R
 
